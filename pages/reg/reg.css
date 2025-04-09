@@ -1,0 +1,32 @@
+.reg-header {
+    justify-content: center;
+    display: flex;
+    background: aqua;
+}
+.reg-main__regForm {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.reg-main__form {
+    border: black solid 3px;
+    margin: 150px;
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+}
+
+.reg-main__submitBtn {
+    cursor: pointer;
+}
+.reg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,31 @@
+.login-header {
+  justify-content: center;
+  display: flex;
+  background: aqua;
+}
+.login-main__loginForm {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.login-main__form{
+    margin: 200px;
+    border: black solid 3px;
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+}
+.login-main__loginBtn{
+    cursor: pointer;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
