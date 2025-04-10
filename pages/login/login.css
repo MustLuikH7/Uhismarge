@@ -1,7 +1,14 @@
+body{
+    background: #28809A;
+}
 .login-header {
-  justify-content: center;
-  display: flex;
-  background: aqua;
+    justify-content: center;
+     display: flex;
+    background: black;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+
 }
 .login-main__loginForm {
   justify-content: center;
@@ -20,6 +27,7 @@
     gap: 10px;
     flex-direction: column;
     display: flex;
+    background: #000;
 }
 .login-main__loginBtn{
     cursor: pointer;
@@ -28,4 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.loginInput{
+    width: 150px;
 }

@@ -1,7 +1,12 @@
+body{
+    background: #28809A;
+}
 .reg-header {
     justify-content: center;
     display: flex;
-    background: aqua;
+    background: black;
+    border-radius: 15px;
+    color: white;
 }
 .reg-main__regForm {
     justify-content: center;
@@ -20,6 +25,7 @@
     gap: 10px;
     flex-direction: column;
     display: flex;
+    background: #000;
 }
 
 .reg-main__submitBtn {
@@ -29,4 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.regInput{
+    width: 150px;
 }

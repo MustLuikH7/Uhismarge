@@ -5,9 +5,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<input type="text" name="note" id="note" class="note" placeholder="Enter note here">
-<button class="nupp" id="nupp">Add Note</button>
-<div id="notes_container" class="notes_container"></div>
-<script src="script.js"></script>
+<header class="main-header">
+    <div class="main-header__wrapper">
+        <h1 class="main-wrapper__title">Ühsimärge</h1>
+    </div>
+</header>
+<div class="container">
+    <div id="notes_container" class="notes_container">
+        <div class="noteNoteContainer">
+            <div class="containerNotes">
+                Temporary Notes
+            </div>
+            <button>Delete</button>
+        </div>
+
+    </div>
+
+    <div class="note-input">
+        <textarea class="note"></textarea>
+        <button class="nupp" id="nupp">Add Note</button>
+    </div>
+</div>
+
 </body>
 </html>
