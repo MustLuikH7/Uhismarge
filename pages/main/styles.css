@@ -119,8 +119,8 @@ body {
     padding: 10px;
     margin: 5px;
     border-radius: 8px;
-    word-wrap: break-word;      /* IE 5.5-7 */
-    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    word-wrap: break-word;      
+    white-space: -moz-pre-wrap; 
     white-space: pre-wrap;
     max-width: 400px;
 }
