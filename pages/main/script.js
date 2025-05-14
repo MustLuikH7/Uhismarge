@@ -13,7 +13,7 @@ async function fetchData() {
                 <h3>${item.pealkiri}</h3>
                 <p>${item.note}</p>
                 <button>Kustuta</button>
-            `;
+                `;
             container.appendChild(noteElement);
         }
     } catch (error) {
@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById('popup');
     add_note.addEventListener("click", async function (event) {
         event.preventDefault();
-        const pealkiri = document.getElementById("pealKiri").value;
-        const notes = document.getElementById("note").value;
-        if (notes.trim() === "") {
+        const pealkiri = document.getElementById("pealKiri");
+        const notes = document.getElementById("note");
+        if (notes.value.trim() === "") {
             alert("Kirjuta midagi");
             return;
         }
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    pealkiri: pealkiri,
-                    note: notes
+                    pealkiri: pealkiri.value,
+                    note: notes.value
                 }),
             });
             const text = await response.text();
@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             console.log(data);
             popup.style.display = 'none';
-            pealkiri.value = "";
-            notes.value = "";
+            pealkiri.value = '';
+            notes.value = '';
             fetchData();
         } catch (error) {
             console.error(error);
@@ -67,7 +67,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     fetchData();
 });
-
-
-
-
